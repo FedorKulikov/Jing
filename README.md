@@ -14,7 +14,9 @@
 - Python 3.7+
 - FastAPI (pip install fastapi)
 - Uvicorn (pip install uvicorn)
-- Аудиофайлы
+- Аудиофайлы:
+  - static/radio.mp3 (основной трек)
+  - static/alternative.mp3 (альтернативный трек)
 
 ## Установка и запуск
 
@@ -53,11 +55,10 @@ http://localhost:8000
 - `GET /radio` - Аудиопоток
 - `GET /play-alternative` - Включить альтернативный трек
 
-
 ## Настройка
 - Для смены горячей клавиши измените параметр в файле main.py:
 ```javascript
-if (e.key.toLowerCase() === "j")  // замените "j" на нужную клавишу
+if (e.key.toLowerCase() === "j")
 ```
 
 - Для замены аудиофайлов просто поместите новые файлы в папку static/:
